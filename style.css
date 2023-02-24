@@ -2,3 +2,19 @@
 	width: 5rem;
 	height: 5rem;
 }
+
+.skewed-square-top {
+	transform: perspective(9cm) rotateX(30deg);
+}
+
+.skewed-square-bottom {
+	transform: perspective(9cm) rotateX(-30deg);
+}
+
+.skewed-square-left {
+	transform: perspective(9cm) rotateY(-30deg);
+}
+
+.skewed-square-right {
+	transform: perspective(9cm) rotateY(30deg);
+}
