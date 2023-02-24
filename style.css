@@ -4,6 +4,11 @@
 	--negative-rotation: -0.1turn;
 }
 
+button {
+	background: none;
+	border: none;
+}
+
 .square-image {
 	width: 5rem;
 	height: 5rem;
