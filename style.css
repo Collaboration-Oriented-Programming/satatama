@@ -1,20 +1,26 @@
+#square-selection-table {
+	--perspective-distance: 9cm;
+	--rotation: 0.1turn;
+	--negative-rotation: -0.1turn;
+}
+
 .square-image {
 	width: 5rem;
 	height: 5rem;
 }
 
 .skewed-square-top {
-	transform: perspective(9cm) rotateX(30deg);
+	transform: perspective(var(--perspective-distance)) rotateX(var(--rotation));
 }
 
 .skewed-square-bottom {
-	transform: perspective(9cm) rotateX(-30deg);
+	transform: perspective(var(--perspective-distance)) rotateX(var(--negative-rotation));
 }
 
 .skewed-square-left {
-	transform: perspective(9cm) rotateY(-30deg);
+	transform: perspective(var(--perspective-distance)) rotateY(var(--negative-rotation));
 }
 
 .skewed-square-right {
-	transform: perspective(9cm) rotateY(30deg);
+	transform: perspective(var(--perspective-distance)) rotateY(var(--rotation));
 }
